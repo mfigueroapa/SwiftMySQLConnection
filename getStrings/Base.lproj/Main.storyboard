@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="getStrings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpC-Sz-zmg">
+                                <rect key="frame" x="220" y="50" width="160" height="36"/>
+                                <color key="backgroundColor" red="0.95830028553299496" green="0.95830028553299496" blue="0.95830028553299496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Zk2-1g-hon"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6FS-yq-IMs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBK-Jr-3N0">
+                                <rect key="frame" x="220" y="106" width="160" height="42"/>
+                                <color key="backgroundColor" red="0.95830028550000002" green="0.95830028550000002" blue="0.95830028550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="1Gh-Fa-j3O"/>
+                                    <constraint firstAttribute="height" constant="42" id="qRL-bk-Qua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Insert">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooI-F0-GwE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoE-VX-Lks">
+                                <rect key="frame" x="220" y="208" width="160" height="36"/>
+                                <color key="backgroundColor" red="0.95830028550000002" green="0.95830028550000002" blue="0.95830028550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4n-Ok-1bl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fll-mL-FEB">
+                                <rect key="frame" x="220" y="304" width="160" height="36"/>
+                                <color key="backgroundColor" red="0.95830028550000002" green="0.95830028550000002" blue="0.95830028550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hde-xP-O7L"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSH-FL-tT2">
+                                <rect key="frame" x="220" y="158" width="160" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EEl-Ct-Trj">
+                                <rect key="frame" x="220" y="254" width="160" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter word to modify:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtE-Y4-fgX">
+                                <rect key="frame" x="220" y="350" width="160" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJE-8P-Es6">
+                                <rect key="frame" x="220" y="372" width="160" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-Xr-GDG">
+                                <rect key="frame" x="220" y="434" width="160" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter new word:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXI-pX-yGN">
+                                <rect key="frame" x="220" y="412" width="160" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fll-mL-FEB" firstAttribute="top" secondItem="EEl-Ct-Trj" secondAttribute="bottom" constant="20" id="1pn-Wg-PAq"/>
+                            <constraint firstItem="KtE-Y4-fgX" firstAttribute="trailing" secondItem="fll-mL-FEB" secondAttribute="trailing" id="2LW-CG-aMD"/>
+                            <constraint firstItem="NJE-8P-Es6" firstAttribute="leading" secondItem="fll-mL-FEB" secondAttribute="leading" id="4no-Tv-cmR"/>
+                            <constraint firstItem="JoE-VX-Lks" firstAttribute="leading" secondItem="VSH-FL-tT2" secondAttribute="leading" id="7kz-Sf-HcN"/>
+                            <constraint firstItem="gpC-Sz-zmg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="85a-CP-nhb"/>
+                            <constraint firstItem="zOX-Xr-GDG" firstAttribute="top" secondItem="tXI-pX-yGN" secondAttribute="bottom" constant="5" id="9JD-HB-Jcm"/>
+                            <constraint firstItem="VSH-FL-tT2" firstAttribute="leading" secondItem="iBK-Jr-3N0" secondAttribute="leading" id="B4I-nA-BAQ"/>
+                            <constraint firstItem="iBK-Jr-3N0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2H-jM-vdX"/>
+                            <constraint firstItem="VSH-FL-tT2" firstAttribute="top" secondItem="iBK-Jr-3N0" secondAttribute="bottom" constant="10" id="IgQ-sb-zj4"/>
+                            <constraint firstItem="iBK-Jr-3N0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JgX-fN-Yyp"/>
+                            <constraint firstItem="gpC-Sz-zmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JlP-jd-Wiu"/>
+                            <constraint firstItem="iBK-Jr-3N0" firstAttribute="top" secondItem="gpC-Sz-zmg" secondAttribute="bottom" constant="20" id="Nzg-w9-Dgr"/>
+                            <constraint firstItem="zOX-Xr-GDG" firstAttribute="trailing" secondItem="NJE-8P-Es6" secondAttribute="trailing" id="P6I-mL-Ioe"/>
+                            <constraint firstItem="fll-mL-FEB" firstAttribute="trailing" secondItem="EEl-Ct-Trj" secondAttribute="trailing" id="QNZ-Cx-dkM"/>
+                            <constraint firstItem="tXI-pX-yGN" firstAttribute="trailing" secondItem="NJE-8P-Es6" secondAttribute="trailing" id="SXo-yH-v9G"/>
+                            <constraint firstItem="tXI-pX-yGN" firstAttribute="top" secondItem="NJE-8P-Es6" secondAttribute="bottom" constant="10" id="V0Y-1s-vpW"/>
+                            <constraint firstItem="fll-mL-FEB" firstAttribute="leading" secondItem="EEl-Ct-Trj" secondAttribute="leading" id="VKa-9B-8n7"/>
+                            <constraint firstItem="EEl-Ct-Trj" firstAttribute="top" secondItem="JoE-VX-Lks" secondAttribute="bottom" constant="10" id="Vvk-fD-08a"/>
+                            <constraint firstItem="NJE-8P-Es6" firstAttribute="top" secondItem="KtE-Y4-fgX" secondAttribute="bottom" constant="5" id="YlB-pc-VkY"/>
+                            <constraint firstItem="JoE-VX-Lks" firstAttribute="trailing" secondItem="VSH-FL-tT2" secondAttribute="trailing" id="cVB-cj-TCg"/>
+                            <constraint firstItem="EEl-Ct-Trj" firstAttribute="leading" secondItem="JoE-VX-Lks" secondAttribute="leading" id="dGu-Rs-Bdc"/>
+                            <constraint firstItem="VSH-FL-tT2" firstAttribute="trailing" secondItem="iBK-Jr-3N0" secondAttribute="trailing" id="iun-UQ-Ccc"/>
+                            <constraint firstItem="KtE-Y4-fgX" firstAttribute="leading" secondItem="fll-mL-FEB" secondAttribute="leading" id="m2B-gS-EHG"/>
+                            <constraint firstItem="JoE-VX-Lks" firstAttribute="top" secondItem="VSH-FL-tT2" secondAttribute="bottom" constant="20" id="mhl-43-Hev"/>
+                            <constraint firstItem="tXI-pX-yGN" firstAttribute="leading" secondItem="NJE-8P-Es6" secondAttribute="leading" id="qHh-iI-ntL"/>
+                            <constraint firstItem="NJE-8P-Es6" firstAttribute="trailing" secondItem="fll-mL-FEB" secondAttribute="trailing" id="sYp-Jr-YGf"/>
+                            <constraint firstItem="zOX-Xr-GDG" firstAttribute="leading" secondItem="NJE-8P-Es6" secondAttribute="leading" id="vAC-qR-gWO"/>
+                            <constraint firstItem="EEl-Ct-Trj" firstAttribute="trailing" secondItem="JoE-VX-Lks" secondAttribute="trailing" id="wct-AD-Q04"/>
+                            <constraint firstItem="KtE-Y4-fgX" firstAttribute="top" secondItem="fll-mL-FEB" secondAttribute="bottom" constant="10" id="z57-l4-Doq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteBtn" destination="JoE-VX-Lks" id="KYr-nr-gJc"/>
+                        <outlet property="deleteTextField" destination="EEl-Ct-Trj" id="drz-1Z-67x"/>
+                        <outlet property="insertBtn" destination="iBK-Jr-3N0" id="JdX-EA-Qdh"/>
+                        <outlet property="insertTextField" destination="VSH-FL-tT2" id="jBJ-Q2-Sw5"/>
+                        <outlet property="selectBtn" destination="gpC-Sz-zmg" id="8o1-0T-itM"/>
+                        <outlet property="updateBtn" destination="fll-mL-FEB" id="7J4-1C-qhf"/>
+                        <outlet property="updateTextFieldCurrent" destination="NJE-8P-Es6" id="sgf-Rn-Ufx"/>
+                        <outlet property="updateTextFieldNew" destination="zOX-Xr-GDG" id="uBW-if-7HY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>

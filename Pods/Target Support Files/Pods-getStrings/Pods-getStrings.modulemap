@@ -1,0 +1,6 @@
+framework module Pods_getStrings {
+  umbrella header "Pods-getStrings-umbrella.h"
+
+  export *
+  module * { export * }
+}
